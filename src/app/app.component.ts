@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import * as M from 'materialize-css';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CocinaApp';
+
+  OnInit() {
+    document.addEventListener('DOMContentLoaded', function() {
+      const elems = document.querySelectorAll('.carousel');
+      const instances = M.Carousel.init(elems);
+    });
+  }
 }
