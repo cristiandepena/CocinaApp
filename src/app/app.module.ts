@@ -13,6 +13,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MainNavbarComponent } from './main-navbar/main-navbar.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { MainBannerComponent } from './main-banner/main-banner.component';
+import { AboutComponent } from './about/about.component';
+import { ServicesComponent } from './services/services.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -20,7 +24,11 @@ import { RegisterComponent } from './register/register.component';
     AppComponent,
     MainNavbarComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    MainBannerComponent,
+    AboutComponent,
+    ServicesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
