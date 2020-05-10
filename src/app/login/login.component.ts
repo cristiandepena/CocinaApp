@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router"
 import * as M from 'materialize-css';
 
 @Component({
@@ -10,7 +11,7 @@ export class LoginComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     document.addEventListener('DOMContentLoaded', function() {
@@ -24,6 +25,11 @@ export class LoginComponent implements OnInit {
     };
       M.Dropdown.init(elems, options);
     });
+  }
+
+  login() {
+    // TODO add logic service and login
+   this.router.navigate(['/products']);
   }
 
 }
