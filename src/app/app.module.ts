@@ -9,26 +9,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
-
-import { MainNavbarComponent } from './main-navbar/main-navbar.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { MainBannerComponent } from './main-banner/main-banner.component';
-import { AboutComponent } from './about/about.component';
-import { ServicesComponent } from './services/services.component';
-import { ContactComponent } from './contact/contact.component';
-
+import { DefaultModule } from './layouts/default/default.module';
+import { DashboardModule } from './layouts/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    MainNavbarComponent,
-    LoginComponent,
-    RegisterComponent,
-    MainBannerComponent,
-    AboutComponent,
-    ServicesComponent,
-    ContactComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +23,9 @@ import { ContactComponent } from './contact/contact.component';
     MatToolbarModule,
     MatDividerModule,
     MatExpansionModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    DefaultModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
