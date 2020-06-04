@@ -11,6 +11,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { DefaultModule } from './layouts/default/default.module';
 import { DashboardModule } from './layouts/dashboard/dashboard.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DashboardModule } from './layouts/dashboard/dashboard.module';
     MatExpansionModule,
     MatFormFieldModule,
     DefaultModule,
-    DashboardModule
+    DashboardModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

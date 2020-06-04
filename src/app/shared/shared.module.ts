@@ -4,6 +4,7 @@ import { MainNavbarComponent } from './components/main-navbar/main-navbar.compon
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from '../auth/login/login.component';
+import { DashboardNavComponent } from './components/dashboard-nav/dashboard-nav.component';
 
 
 
@@ -11,7 +12,8 @@ import { LoginComponent } from '../auth/login/login.component';
   declarations: [
     MainNavbarComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardNavComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { LoginComponent } from '../auth/login/login.component';
   exports: [
     MainNavbarComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardNavComponent
   ]
 })
 export class SharedModule { }
