@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MainNavbarComponent } from './components/main-navbar/main-navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
-import { LoginComponent } from '../login/login.component';
+import { LoginComponent } from '../auth/login/login.component';
 
 
 
